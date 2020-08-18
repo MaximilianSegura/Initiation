@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figura - Anuncios</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="altBlog.css">
+    <link rel="icon" type="image/png" href="./img/background.png" />
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=1190445321316803&autoLogAppEvents=1" nonce="BUb9bUSz"></script>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Inicio</a>
+        <a href="./novedades.html">¿Qué hay de nuevo?</a>
+        <a href="./anuncios.html">Anuncios</a>
+        <a href="concursos.html">Concursos</a>
+    </nav>
+    <div id="container"></div>
+    <script src="./altBlog.js"></script>
+    <script>
+
+        let blog = new AltBlog('https://cors-anywhere.herokuapp.com/ctrl-alt-tec.herokuapp.com/colab/figura/blog/', {
+            initialHTML: `
+                <h1 style="width: 100%">Anuncios</h1>
+            `
+        })
+        blog.fetchPosts().then(()=>{
+            blog.displayPosts(post=>post.category == 'Anuncios')
+        });
+
+    </script>
+    <noscript>Tu explorador no soporta o tiene desactivado JavaScript :(</noscript>
+
+    <footer>
+        <p>
+
+        </p>
+    </footer>
+
+</body>
+</html>

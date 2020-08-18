@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Primera practica html</title>
+
+		<!-- NO TE PREOCUPES POR ESTO--------------------------- -->
+		<script >
+			function hello(){
+				var resp=prompt("hola xd");
+				document.getElementById('cambiar').innerHTML = resp;
+				//este es un comentario y no se va a ejecutar
+			}
+		</script>
+
+
+	</head>
+	<body>
+		<div id="top" >
+			<h1>Este es mi titulo</h1>
+			<h2 id='cambiar' >Titulo 2</h2>
+			<h6>Mirame xd</h6>
+
+			<!-- NO TE PREOCUPES POR ESTO--------------------------- -->
+			<button onclick='hello()' type='button' >Picame</button><!--- botoncito bien loco xd  --->
+
+
+		</div>
+		<div id='middle' >
+			<p>Lorem <em><b>ipsum</b></em> dolor sit amet</p>
+
+			<!---<p> comentario que no se va a leer</p> --->
+
+			<ol>
+				<li><a href='http://youtube.com' target='_blank' > Elemento 1</a></li>
+				<li><a href='https://figuracsf.media' target='_blank' >Figura CSF</a></li>
+				<li><a href='./segundaPag.html' >Pagina Kawai</a></li>
+			</ol>
+			<ul>
+				<li>Elemento 4</li>
+				<li>Elemento 5</li>
+				<li>Elemento 6</li>
+			</ul>
+
+
+		</div>
+		<video src='https://www.youtube.com/watch?v=vWxG8hZjl_g' controls>
+			Video is not supported
+		</video>
+		<a href='http://stemen.com' >Link a una página</a>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget facilisis turpis, tincidunt maximus neque. Fusce in enim tristique, venenatis libero iaculis, blandit nunc. Nam pellentesque libero ut tempor volutpat. Nulla mattis lacus nec diam laoreet mollis vel non augue. Aenean id ante quam. Vestibulum gravida urna lectus, ut porta est tempor vitae. Curabitur convallis dolor at tempor pharetra. Vivamus consequat lacus non dui tempor, eget dictum neque finibus. In tempus placerat nisi non porttitor. Nunc ac ipsum mi. Quisque vel lorem mollis</p>
+		<a href='#top'>Back to top</a>
+	</body>
+</html>
